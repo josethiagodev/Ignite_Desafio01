@@ -69,17 +69,19 @@ section.task-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #EBEBEB;
-        padding: 1rem 0;
+        border: 1px solid var(--background);
+        margin: 1rem 0;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
 
         div {
           display: flex;
           align-items: center;
-          gap: 14px;
+          gap: 15px;
           outline: 0;
 
           p {
-            font-size: 1rem;
+            font-size: 1.05rem;
             color: var(--text);
           }
 
@@ -153,6 +155,9 @@ section.task-list {
             }
           }
         }
+      }
+      li:hover {
+        border: 1px solid #ccc;
       }
     } 
   }
